@@ -44,5 +44,5 @@ app.get("/viewproduct", function (request, response) {
     console.log(results);
   });
 });
-console.log("yeet");
+
 app.listen(3000);
