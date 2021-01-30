@@ -24,7 +24,7 @@ app.get("/", function (request, response) {
   response.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.get("/viewproduct", function (request, response) {
+app.get("/getposts", function (request, response) {
   var post = request.body;
 
   connection.query("SELECT * FROM posts", [post], function (
