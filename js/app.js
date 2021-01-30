@@ -40,6 +40,7 @@ app.get("/viewproduct", function (request, response) {
       response.send("No post found ");
     }
     response.end();
+    console.log("yeet");
     console.log(results);
   });
 });
