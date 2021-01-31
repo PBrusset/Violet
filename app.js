@@ -21,7 +21,7 @@ var connection = mysql.createConnection({
 });
 
 app.get("/", function (request, response) {
-  response.sendFile(path.join(__dirname + "/index.html"));
+  response.sendFile(path.join(__dirname + "/forum.html"));
 });
 
 app.get("/getposts", function (request, response) {
