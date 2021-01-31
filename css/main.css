@@ -4,9 +4,15 @@ body {
 }
 
 .form-group,
-#stupidbutton {
+#stupidbutton,
+.card2 {
   margin-left: 200px;
   margin-right: 200px;
+}
+
+.card2{
+  margin-top:50px;
+  margin-bottom:50px;
 }
 
 h1,
@@ -50,7 +56,7 @@ parag{
 }
 
 h4{
-  padding-bottom:100px;
+  padding-bottom:200px
 }
 
 .carousel-inner{
