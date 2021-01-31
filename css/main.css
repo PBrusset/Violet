@@ -39,3 +39,16 @@ footer {
   padding-left:100px;
   padding-right:100px;
 }
+
+.carousel-inner{
+  padding-left:200px;
+  padding-right:200px;
+}
+
+h3{
+  border-left: 500px;
+  border-right: 500px;
+  font-size:70px;
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0, 0.5);
+}
