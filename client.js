@@ -18,12 +18,15 @@ function postRequest(location, payload) {
 
 function submit_by_id(){
     document.getElementById("form_id").submit();
+    console.log("look at that");
+    var flname = document.getElementById("flname").value;
+    var content = document.getElementById('content').value;
 }
 
-var flname = document.getElementById("flname").value;
-var content = document.getElementById('content').value;
-console.log(flname)
-console.log(content)
+// var flname = document.getElementById("flname").value;
+// var content = document.getElementById('content').value;
+console.log(flname);
+console.log(content);
 
 // Payload and then sending it to the server
 payload = {
@@ -32,14 +35,14 @@ payload = {
 }
 console.log(payload);
 
-var xhr = postRequest("forum", payload)
+// var xhr = postRequest("forum", payload)
 
-xhr.onreadystatechange = function() {
-    if(xhr.readyState == 4 && xhr.status == 200) {
-        //handle response
-        var res = JSON.parse(xhr.response);
-        if(res["forum"] == false){
-            console.log("Failed.")
-        }
-    }
-}
+// xhr.onreadystatechange = function() {
+//     if(xhr.readyState == 4 && xhr.status == 200) {
+//         //handle response
+//         var res = JSON.parse(xhr.response);
+//         if(res["forum"] == false){
+//             console.log("Failed.")
+//         }
+//     }
+// }
