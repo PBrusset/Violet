@@ -16,22 +16,27 @@ function postRequest(location, payload) {
     return xhr;
 }
 
+var flname = document.getElementById("flname").value;
+var content = document.getElementById('content').value;
+console.log(flname)
+console.log(content)
+console.log(button)
+
 // Payload and then sending it to the server
 payload = {
-    "id": id,
     "name": flname,
     "content": content
 }
 console.log(payload);
 
-var xhr = postRequest("signup", payload)
+var xhr = postRequest("forum", payload)
 
 xhr.onreadystatechange = function() {
     if(xhr.readyState == 4 && xhr.status == 200) {
         //handle response
         var res = JSON.parse(xhr.response);
-        if(res["signup"] == false){
-            console.log("Signup Failed.")
+        if(res["forum"] == false){
+            console.log("Failed.")
         }
     }
 }
