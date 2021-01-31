@@ -1,3 +1,9 @@
 body {
   background-color: #f7d9f7;
 }
+
+.form-group,
+#stupidbutton {
+  margin-left: 100px;
+  margin-right: 100px;
+}
