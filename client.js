@@ -16,11 +16,14 @@ function postRequest(location, payload) {
     return xhr;
 }
 
+function submit_by_id(){
+    document.getElementById("form_id").submit();
+}
+
 var flname = document.getElementById("flname").value;
 var content = document.getElementById('content').value;
 console.log(flname)
 console.log(content)
-console.log(button)
 
 // Payload and then sending it to the server
 payload = {
