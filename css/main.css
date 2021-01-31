@@ -40,6 +40,19 @@ footer {
   padding-right:100px;
 }
 
+h4,
+parag{
+  display: flex;
+  flex-direction: crow;
+  align-items: center;
+  padding-left:200px;
+  padding-top:100px;
+}
+
+h4{
+  padding-bottom:100px;
+}
+
 .carousel-inner{
   padding-left:200px;
   padding-right:200px;
